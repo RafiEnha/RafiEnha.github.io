@@ -32,6 +32,46 @@ body {
   margin-bottom: 20px;
 }
 
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 84px;
+  grid-template-areas:
+    "head  photo"
+    "desc  desc"
+    "actions actions";
+  gap: 1rem;
+  align-items: center;
+}
+.hero-head    { grid-area: head; }
+.hero-photo   { grid-area: photo; }
+.hero-desc    { grid-area: desc; }
+.hero-actions { grid-area: actions; }
+
+@media (max-width: 767.98px) {
+  #hero .name h5 {
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.25rem;
+  }
+  #hero .title {
+    font-size: clamp(1.6rem, 8vw, 2.1rem);
+    line-height: 1.1;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-grid {
+    width: 75%;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+    grid-template-areas:
+      "head    photo"
+      "desc    photo"
+      "actions photo";
+    column-gap: 3rem;
+    row-gap: 1.25rem;
+  }
+}
+
 .btn-light:hover {
   background: transparent;
   color: #ffffff;
