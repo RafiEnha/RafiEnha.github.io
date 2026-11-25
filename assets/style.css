@@ -113,6 +113,10 @@ body {
   filter: none;
 }
 
+.icon-list {
+  gap: 3rem 1.5rem;
+}
+
 .icon-item {
     position: relative;
     display: flex;
