@@ -197,6 +197,7 @@ body {
 @media (min-width: 768px) {
   .timeline-item { --tl-x: 25%; }
 }
+
 @media (min-width: 992px) {
   .timeline-item { --tl-x: 16.6667%; }
 }
@@ -214,22 +215,27 @@ body {
 .project-title:hover {
   color: #aaa;
 }
+
 .project-arrow {
   transition: transform 0.3s ease;
 }
+
 .project-title[aria-expanded="true"] .project-arrow {
   transform: rotate(45deg);
 }
 
 .project-detail {
   max-width: 850px;
-  font-size: 12px;
   line-height: 1.7;
   text-align: justify;
 }
 
+.project-detail p {
+    font-size: 12px;
+}
+
 @media ( min-width: 768px ) {
-  .project-detail { font-size: 16px; }
+  .project-detail p { font-size: 16px; }
 }
 
 .text-contact {
@@ -250,6 +256,7 @@ body {
 .gallery-item {
   cursor: zoom-in;
 }
+
 .gallery-item img {
   height: 120px;
   width: auto;
@@ -257,9 +264,11 @@ body {
   object-fit: cover;
   transition: transform 0.3s ease;
 }
+
 .gallery-item:hover img {
   transform: scale(1.05);
 }
+
 @media (min-width: 768px) {
   .gallery-item img { height: 180px; }
 }
