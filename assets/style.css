@@ -223,8 +223,13 @@ body {
 
 .project-detail {
   max-width: 850px;
+  font-size: 12px;
   line-height: 1.7;
   text-align: justify;
+}
+
+@media ( min-width: 768px ) {
+  .project-detail { font-size: 16px; }
 }
 
 .text-contact {
