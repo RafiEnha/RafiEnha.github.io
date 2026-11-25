@@ -203,8 +203,14 @@ body {
 
 .project-title {
   color: #fff;
+  line-height: 1.5;
   transition: color 0.3s ease;
 }
+
+@media (min-width: 768px) {
+  .project-title { line-height: 1; }
+}
+
 .project-title:hover {
   color: #aaa;
 }
@@ -219,6 +225,14 @@ body {
   max-width: 850px;
   line-height: 1.7;
   text-align: justify;
+}
+
+.text-contact {
+  font-size: 12px;
+}
+
+@media (min-width: 768px) {
+  .text-contact { font-size: 16px; }
 }
 
 .contact-image {
